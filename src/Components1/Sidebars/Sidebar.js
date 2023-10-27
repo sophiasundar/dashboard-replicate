@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Collapse from 'react-bootstrap/Collapse';
 
-const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,handleOpen1,handleOpen2,open,open1,open2,setOpen,
-  setOpen1,setOpen2}) => {
+const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,handleOpen1,handleOpen2,open,open1,open2}) => {
   
   let sidebarClasses = ''
   sidebarClasses += sidebarToggle
@@ -59,7 +58,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
       <hr className="sidebar-divider" />
 
       {/* <!-- Heading --> */}
-      <div className="sidebar-heading">Interface</div>
+      <div className="sidebar-heading">INTERFACE</div>
 
       {/* <!-- Nav Item - Pages Collapse Menu --> */}
       <li className="nav-item">
@@ -84,7 +83,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
           data-parent="#accordionSidebar"
         >
           <div className="bg-white py-2 collapse-inner rounded">
-            <h6 className="collapse-header">Custom Components:</h6>
+            <h6 className="collapse-header">CUSTOM COMPONENTS:</h6>
             <Link to="/buttons" style={{ textDecoration: 'none' }}>
               <a className="collapse-item" href="buttons.html">
                 Buttons
@@ -125,7 +124,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
           data-parent="#accordionSidebar"
         >
           <div className="bg-white py-2 collapse-inner rounded">
-            <h6 className="collapse-header">Custom Utilities:</h6>
+            <h6 className="collapse-header">CUSTOM UTILITIES:</h6>
             <Link to="/colors" style={{ textDecoration: 'none' }}>
               <a className="collapse-item" href="utilities-color.html">
                 Colors

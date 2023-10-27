@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Footer from '../../Footer'
-import LogoutModal from '../../LogoutModal'
-import Navbar from '../../Navbar'
-import ScrollToTop from '../../ScrollToTop'
-import Sidebar from '../../Sidebars/Sidebar'
+import Footer from '../Footer'
+import LogoutModal from '../LogoutModal'
+import Navbar from '../Navbar'
+import ScrollToTop from '../ScrollToTop'
+import Sidebar from '../Sidebars/Sidebar'
 
 const Animations = ({ handleOpen,handleOpen1,handleOpen2,open,open1,open2,setOpen,
   setOpen1,setOpen2}) => {

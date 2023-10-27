@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navbar = ({ sidebarToggle, setSidebarToggle, handleSidebar }) => {
+const Navbar = ({ handleSidebar }) => {
   return (
     // <!-- Topbar -->
     <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">

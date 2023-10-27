@@ -66,7 +66,7 @@ const Colors = ({handleOpen,handleOpen1,handleOpen2,open,open1,open2,setOpen,
       content: '.bg-gradient-info',
     },
     {
-      classes: 'px-3 py-5 bg-gradient-warning text-white',
+     classes: 'px-3 py-5 bg-gradient-warning text-white',
       content: '.bg-gradient-warning',
     },
     {
