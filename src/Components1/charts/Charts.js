@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Footer from '../Footer'
 import LogoutModal from '../LogoutModal'
 import Navbar from '../Navbar'
 import ScrollToTop from '../ScrollToTop'
 import Sidebar from '../Sidebars/Sidebar'
-import AreaChart from '../charts/area'
+import AreaChart from './area'
 import BarChart from './BarChart'
-import DonutChart from './DonutChart'
+import DonutChart from './DonutCharts'
 
 const Charts = ({ handleOpen,handleOpen1,handleOpen2,open,open1,open2,setOpen,
   setOpen1,setOpen2}) => {
@@ -87,7 +87,7 @@ const Charts = ({ handleOpen,handleOpen1,handleOpen2,open,open1,open2,setOpen,
                         <BarChart />
                       </div>
                       <hr />
-                      Styling for the bar chart can be found in the
+                       Styling for the bar chart can be found in the
                       <code>/js/demo/chart-bar-demo.js</code> file.
                     </div>
                   </div>

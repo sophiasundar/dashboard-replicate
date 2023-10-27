@@ -1,6 +1,6 @@
 import React from 'react'
-import AreaChart from '../ChartsPage/AreaChart'
-import DonutChart from '../ChartsPage/DonutChart'
+import AreaChart from '../charts/area'
+import DonutChart from '../charts/DonutCharts'
 
 const Row2 = () => {
   return (

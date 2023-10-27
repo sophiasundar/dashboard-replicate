@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../ComponentsPage/CardsPage/Card'
+import Card from '../interfaceComponents/cards/Card'
 
 const Row1 = () => {
   const cardData = [

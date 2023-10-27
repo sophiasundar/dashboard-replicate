@@ -104,6 +104,7 @@ const Login = () => {
                             Create an Account!
                           </a>
                         </Link>
+                        <LogoutModal></LogoutModal>
                       </div>
                     </div>
                   </div>

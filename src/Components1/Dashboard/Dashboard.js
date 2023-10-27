@@ -4,18 +4,18 @@ import ScrollToTop from '../ScrollToTop'
 import Sidebar from '../Sidebars/Sidebar'
 import Footer from '../Footer'
 import Heading from './Heading'
-import Row1 from './Row1'
-import Row2 from './Row2'
-import Row3 from './Row3'
+import Row1 from './CardRow'
+import Row2 from './ChartRow'
+import Row3 from './ProjectRow'
 import LogoutModal from '../LogoutModal'
 import { Collapse } from 'react-bootstrap'
 import Collapse from 'react-bootstrap/Collapse'
 
 const Dashboard = ({ handleOpen,handleOpen1,handleOpen2,open,open1,open2,setOpen,
   setOpen1,setOpen2}) => {
-  const [sidebarToggle, setSidebarToggle] = useState(true)
 
-  const handleSidebar = () => {
+    const [sidebarToggle, setSidebarToggle] = useState(true)
+    const handleSidebar = () => {
     setSidebarToggle((prevSidebarToggle) => !prevSidebarToggle)
   }
   return (
