@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes  } from 'react-router-dom';
 import Dashboard from './Components1/Dashboard/Dashboard'
 import ButtonPage from './Components1/interfaceComponents/buttons/buttonMain';
 import Cards from './Components1/interfaceComponents/cards/Cards';
@@ -35,6 +35,7 @@ function App() {
    return (
     <div className="App">
      <Routes>
+      {/* <Route path="/" element={<Dashboard dashboard = {Dashboard}/>}/> */}
      <Route path="/" element={<Dashboard open={open} setOpen={setOpen} handleOpen={handleOpen} open1={open1}
           setOpen1={setOpen1} handleOpen1={handleOpen1} open2={open2} setOpen2={setOpen2} handleOpen2={handleOpen2}/>} />
     
