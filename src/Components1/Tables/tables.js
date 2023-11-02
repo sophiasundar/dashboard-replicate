@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 import ScrollToTop from '../ScrollToTop'

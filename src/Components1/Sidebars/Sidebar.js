@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import Collapse from 'react-bootstrap/Collapse';
+// import Collapse from 'react-bootstrap/Collapse';
 
 const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,handleOpen1,handleOpen2,open,open1,open2}) => {
   
@@ -75,7 +75,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
           <i className="fas fa-fw fa-cog" style={{ marginRight: margin }}></i>
           <span>Components</span>
         </a>
-        <Collapse in={open}>
+        {/* <Collapse in={open}> */}
         <div
           id="collapseTwo"
           className="collapse"
@@ -96,7 +96,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
             </Link>
           </div>
         </div>
-        </Collapse>
+        {/* </Collapse> */}
       </li>
 
       {/* <!-- Nav Item - Utilities Collapse Menu --> */}
@@ -116,7 +116,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
           ></i>
           <span>Utilities</span>
         </a>
-        <Collapse in={open1}>
+        {/* <Collapse in={open1}> */}
         <div
           id="collapseUtilities"
           className="collapse"
@@ -147,7 +147,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
             </Link>
           </div>
         </div>
-        </Collapse>
+        {/* </Collapse> */}
       </li>
 
       {/* <!-- Divider --> */}
@@ -173,7 +173,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
           ></i>
           <span>Pages</span>
         </a>
-        <Collapse in={open2}>
+        {/* <Collapse in={open2}> */}
         <div
           id="collapsePages"
           className="collapse"
@@ -211,7 +211,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
             </Link>
           </div>
         </div>
-        </Collapse>
+        {/* </Collapse> */}
       </li>
 
       {/* <!-- Nav Item - Charts --> */}
