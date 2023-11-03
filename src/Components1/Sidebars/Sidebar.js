@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-// import Collapse from 'react-bootstrap/Collapse';
+import Collapse from 'react-bootstrap/Collapse';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,handleOpen1,handleOpen2,open,open1,open2}) => {
   
@@ -58,7 +59,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
       <hr className="sidebar-divider" />
 
       {/* <!-- Heading --> */}
-      <div className="sidebar-heading">INTERFACE</div>
+      <div className="sidebar-heading">Interface</div>
 
       {/* <!-- Nav Item - Pages Collapse Menu --> */}
       <li className="nav-item">
@@ -75,7 +76,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
           <i className="fas fa-fw fa-cog" style={{ marginRight: margin }}></i>
           <span>Components</span>
         </a>
-        {/* <Collapse in={open}> */}
+        <Collapse in={open}>
         <div
           id="collapseTwo"
           className="collapse"
@@ -83,7 +84,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
           data-parent="#accordionSidebar"
         >
           <div className="bg-white py-2 collapse-inner rounded">
-            <h6 className="collapse-header">CUSTOM COMPONENTS:</h6>
+            <h6 className="collapse-header">Custom Components:</h6>
             <Link to="/buttons" style={{ textDecoration: 'none' }}>
               <a className="collapse-item" href="buttons.html">
                 Buttons
@@ -96,7 +97,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
             </Link>
           </div>
         </div>
-        {/* </Collapse> */}
+        </Collapse>
       </li>
 
       {/* <!-- Nav Item - Utilities Collapse Menu --> */}
@@ -116,7 +117,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
           ></i>
           <span>Utilities</span>
         </a>
-        {/* <Collapse in={open1}> */}
+        <Collapse in={open1}>
         <div
           id="collapseUtilities"
           className="collapse"
@@ -147,7 +148,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
             </Link>
           </div>
         </div>
-        {/* </Collapse> */}
+        </Collapse>
       </li>
 
       {/* <!-- Divider --> */}
@@ -173,7 +174,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
           ></i>
           <span>Pages</span>
         </a>
-        {/* <Collapse in={open2}> */}
+        <Collapse in={open2}>
         <div
           id="collapsePages"
           className="collapse"
@@ -211,7 +212,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle, handleSidebar,handleOpen,han
             </Link>
           </div>
         </div>
-        {/* </Collapse> */}
+        </Collapse>
       </li>
 
       {/* <!-- Nav Item - Charts --> */}
